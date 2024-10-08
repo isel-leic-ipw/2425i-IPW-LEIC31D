@@ -9,9 +9,6 @@
 
 import fs from 'node:fs/promises'
 
-
-
-
 function mainThen(){
     const readPromise = fs.readFile("file1.txt")
     readPromise
@@ -23,11 +20,12 @@ async function main(){
     try{
         const readPromise = fs.readFile("file1.txt")
         const data = await readPromise
-        console.log(data)
+        console.log(data.toString())
     }catch(error){
         console.log("ERROR",error)
     }
 }
 
+mainThen()
     
 console.log("DONE REALLY?")

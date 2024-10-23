@@ -1,0 +1,47 @@
+GET http://localhost:9200/_all
+
+###
+
+DELETE http://localhost:9200/books
+
+###
+
+PUT http://localhost:9200/books
+
+###
+
+PUT http://localhost:9200/books/_doc/b01
+content-type: application/json
+
+{
+    "name" : "NODE.JS" 
+}
+
+###
+
+GET http://localhost:9200/books/_doc/b01
+###
+POST http://localhost:9200/books/_doc
+content-type: application/json
+
+{
+    "name" : "NODE.JS2" 
+}
+
+###
+
+DELETE http://localhost:9200/books/_doc/b01
+
+###
+
+GET http://localhost:9000/
+
+###
+
+POST http://localhost:9000/students
+content-type: application/json
+
+{
+    "name" : "Filipe",
+    "email" : "ff@mail.pt" 
+}

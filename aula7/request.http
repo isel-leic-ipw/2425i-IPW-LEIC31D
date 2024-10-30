@@ -1,0 +1,3 @@
+
+GET  https://v3.football.api-sports.io/teams?id=228 HTTP/1.1
+x-apisports-key : 661a3776acc1027b0d9c6758510546a7

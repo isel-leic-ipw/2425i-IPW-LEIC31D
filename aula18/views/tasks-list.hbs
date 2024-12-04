@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> Tasks Application</title>
+    </head>
+    <body>
+        <!--- Menu --->
+        <a href="/"> Home </a> 
+        <a href="/tasks"> Tasks </a> 
+        <a href="/createTask">Create Task</a>
+
+        <h1> All User Tasks </h1>
+        {{#each tasks}}
+            <p>
+                Task info : 
+                    <a href="/tasks/{{id}}" > ID = {{id}} </a> Text = {{text}} 
+            </p>
+        {{/each}}
+        <p> ISEL </p>
+    </body>
+</html>      

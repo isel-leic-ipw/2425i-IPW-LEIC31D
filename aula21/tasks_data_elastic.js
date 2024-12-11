@@ -33,7 +33,7 @@ function createTask(text, userId){
         text : text,
         userId : userId
     }
-    return fetch(baseURL + `tasks/_doc`, {
+    return fetch(baseURL + `tasks/_doc?refresh=wait_for`, {
         method : "POST",
         body : JSON.stringify(body),
         headers : {
